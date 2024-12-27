@@ -22,6 +22,7 @@ name: Build and deploy ASP.Net Core app to an Azure Web App
 env:
   AZURE_WEBAPP_NAME: FSUSPORTIDYAPI20241001230520    # set this to the name of your Azure Web App
   AZURE_WEBAPP_PACKAGE_PATH: 'BackEnd/FSU.SPORTIDY'      # set this to the path to your web app project, defaults to the repository root
+  AZURE_WEBAPP_PACKAGE_PATH_DEPLOY: 'BackEnd/FSU.SPORTIDY/FSU.SPORTIDY.API' 
   DOTNET_VERSION: '8'                 # set this to the .NET Core version to use
 
 on:
@@ -89,4 +90,4 @@ jobs:
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
-          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH_DEPLOY }}
