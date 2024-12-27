@@ -1,1 +1,0 @@
-# SPORTIDY_App

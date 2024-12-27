@@ -123,10 +123,10 @@ builder.Services.AddScoped<IImageFieldService, ImageFieldService>();
 builder.Services.Configure<MailSetting>(builder.Configuration.GetSection("MailSettings"));
 
 // setup firebase
-FirebaseApp.Create(new AppOptions()
-{
-    Credential = GoogleCredential.FromFile("sportidy-447fd-firebase-adminsdk-7qf6b-a43214214a.json")
-});
+//FirebaseApp.Create(new AppOptions()
+//{
+//    Credential = GoogleCredential.FromFile("sportidy-447fd-firebase-adminsdk-7qf6b-a43214214a.json")
+//});
 
 
 //Config Jwt Token
