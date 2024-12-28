@@ -31,7 +31,7 @@ namespace FSU.SPORTIDY.API.Controllers
                     return Ok(new BaseResponse()
                     {
                         StatusCode = StatusCodes.Status200OK,
-                        Message = "Get All Club success",
+                        Message = "Get All Club success and will receive all club in list",
                         Data = result,
                         IsSuccess = true
                     });
